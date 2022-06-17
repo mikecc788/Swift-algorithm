@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  DMSound
+
+  Created by kiss on 2020/6/1.
+  Copyright © 2020 kiss. All rights reserved.
+*/
+"隱私協議" = "Privacy Policy";
+"同意" = "Agree";
+"选择您的装置" = "Choose your device";
+"搜寻耳机" = "Search Earphone";
+"重新搜索" = "Search Again";
+"没发现耳机,请确保左右耳机…" = "Not Found,Please make sure both earphones are…";
+"1)保持开机\n2)与手机保持50cm范围内\n3)已配对" = "1)Power On\n2)Keep the distance of 50cm with the phone\n3)Paired";
+"连接" = "Connect";
+"我的耳机" = "My Earphone";
+"连接中…" = "Connecting…";
+"按键设置" = "Control Settings";
+"音效模式" = "Sound Equalizer";
+"耳机资料" = "Earphone Info";
+"耳机更新" = "Earphone Upgrade";
+"連接成功!" ="Connected";
+"連接斷開，点击重连" = "Disconnected,click to connect...";
+"關於" ="About";
+"App版本" = "Apps Version";
+"意見反饋" = "Feedback";
+"DM官方網站" = "DM Official Website";
+"按鍵設定" = "Control Settings";
+"左耳機" = "Left";
+"重設" = "Reset";
+"連按兩次" = "Double Click";
+"連按三次" = "Triple Click";
+"右耳機" = "Right";
+"播放/暂停" = "Play/Pause";
+"音量+" = "Volume+";
+"音量-" = "Volume-";
+"下一曲" ="Next Track";
+"上一曲" = "Previous Track";
+"耳機更新" = "Earphone Upgrade";
+"最新版本" = "Latest Version";
+"更新内容:" = "Update:";
+"立即更新" = "Upgrade";
+"1.修复部分Bug\n2.修改连接问题" = "1.Fix Bug parts\n2.Modify Connection Problem";
+"正在更新中…" = "Upgrading…";
+"退出" ="Cancel";
+"請確保左右耳機都保持開機，並與手機保持50cm範圍內" = "Please make sure both earphones are on and keep the distance of 50cm with the phone.";
+"完成" = "Complete";
+"升级成功" = "Upgrade success";
+"升级失败" = "Upgrade Failed";
+"重试" = "Retry";
+"·與手機保持50cm範圍內\n\n·與手機已配對\n\n·保持開機" = "·Please make sure both earphones are power on\n\n·Paired\n\n·In the distance of 50cm with the phone";
+"版本" = "Version";
+"提示音语言" = "Signal Language";
+"英语" = "English";
+"耳機資料"= "About Earphone";
+"左" = "Left";
+"右" = "Right";
+"已经是最新版本" = "Firmware is latest version";
+"请播放歌曲然后再设置EQ" = "Please playback a music to activate.";
+"你还没有添加耳机\n 点击右下角\"+\"添加耳机"="you have not add any earphone\nClick\"+\"to add earphone";
+"自訂" = "Custom";
+"流行" = "POP";
+"聲樂"= "Vocal";
+"古典"= "Classic";
+"重低音"= "Bass Booster";
+"弱高音" ="Treble Reducer";
+"搖滾" ="Rock";
+"爵士" = "Jazz";
+"嘻哈" = "Hip Hop";
+"請轉到設定隱私頁以啟用藍牙授權" = "Please go to the settings privacy page to enable Bluetooth authorization";
+"未连接" = "Not Connect";
+"正在加载" = "Loading";

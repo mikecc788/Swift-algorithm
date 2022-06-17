@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  TestFeel
+//
+//  Created by app on 2022/3/11.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIColor+Extension.h"
+#import "LFSAppUserSetting.h"
+#define kKeyWindow [[[UIApplication sharedApplication] windows] objectAtIndex:0]
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define statusBar [[UIApplication sharedApplication] statusBarFrame].size.height
+#define SafeAreaTopHeight ((SCREEN_HEIGHT >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"] ? 88 : 64)
+#define SafeAreaBottomHeight ((SCREEN_HEIGHT >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"]  ? 30 : 0)
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define kMaxX(X) CGRectGetMaxX(X)
+#define kMaxY(Y) CGRectGetMaxY(Y)
+#define Gloabal_bg [UIColor colorFromHexStr:@"#854794"]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

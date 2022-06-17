@@ -1,0 +1,10 @@
+platform :ios, "9.0"
+target 'TestFeel'  do
+  # pod 'Kiwi'
+pod 'SGPagingView', '~> 1.7.2'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'BRPickerView'
+pod 'PNChart'
+pod 'MBProgressHUD'
+end

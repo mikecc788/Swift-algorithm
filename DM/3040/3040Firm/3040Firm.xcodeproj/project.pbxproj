@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A5536CB24AD6A970006641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5536CA24AD6A970006641A /* AppDelegate.swift */; };
+		4A5536CD24AD6A970006641A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5536CC24AD6A970006641A /* SceneDelegate.swift */; };
+		4A5536CF24AD6A970006641A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5536CE24AD6A970006641A /* ViewController.swift */; };
+		4A5536D224AD6A970006641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5536D024AD6A970006641A /* Main.storyboard */; };
+		4A5536D424AD6A980006641A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5536D324AD6A980006641A /* Assets.xcassets */; };
+		4A5536D724AD6A980006641A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5536D524AD6A980006641A /* LaunchScreen.storyboard */; };
+		4A55385A24AD74470006641A /* GaiaDeviceConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380524AD74460006641A /* GaiaDeviceConnectionProtocol.swift */; };
+		4A55385B24AD74470006641A /* GaiaDeviceNoiseCancellationPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380724AD74460006641A /* GaiaDeviceNoiseCancellationPluginProtocol.swift */; };
+		4A55385C24AD74470006641A /* GaiaDevicePluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380824AD74460006641A /* GaiaDevicePluginProtocol.swift */; };
+		4A55385D24AD74470006641A /* GaiaDeviceEarbudPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380924AD74460006641A /* GaiaDeviceEarbudPluginProtocol.swift */; };
+		4A55385E24AD74470006641A /* GaiaDeviceVoiceAssistantPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380A24AD74460006641A /* GaiaDeviceVoiceAssistantPluginProtocol.swift */; };
+		4A55385F24AD74470006641A /* GaiaDeviceUpdaterPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380B24AD74460006641A /* GaiaDeviceUpdaterPluginProtocol.swift */; };
+		4A55386024AD74470006641A /* GaiaManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380C24AD74460006641A /* GaiaManagerProtocol.swift */; };
+		4A55386124AD74470006641A /* GaiaViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380D24AD74460006641A /* GaiaViewControllerProtocol.swift */; };
+		4A55386224AD74470006641A /* GaiaDeviceUpdaterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380E24AD74460006641A /* GaiaDeviceUpdaterProtocol.swift */; };
+		4A55386324AD74470006641A /* GaiaViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55380F24AD74460006641A /* GaiaViewModelProtocol.swift */; };
+		4A55386424AD74470006641A /* GaiaDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381024AD74460006641A /* GaiaDeviceProtocol.swift */; };
+		4A55386524AD74470006641A /* UIView+Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381224AD74460006641A /* UIView+Icon.swift */; };
+		4A55386624AD74470006641A /* UInt16+ByteOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381324AD74460006641A /* UInt16+ByteOrder.swift */; };
+		4A55386724AD74470006641A /* UInt32+ByteOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381424AD74460006641A /* UInt32+ByteOrder.swift */; };
+		4A55386824AD74470006641A /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381524AD74460006641A /* String+MD5.swift */; };
+		4A55386924AD74470006641A /* Data+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381624AD74460006641A /* Data+MD5.swift */; };
+		4A55386A24AD74470006641A /* GaiaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381824AD74460006641A /* GaiaManager.swift */; };
+		4A55386B24AD74470006641A /* GaiaDeviceEarbudPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381A24AD74460006641A /* GaiaDeviceEarbudPlugin.swift */; };
+		4A55386C24AD74470006641A /* GaiaDeviceNoiseCancellationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381B24AD74460006641A /* GaiaDeviceNoiseCancellationPlugin.swift */; };
+		4A55386D24AD74470006641A /* GaiaDeviceVoiceAssistantPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381C24AD74460006641A /* GaiaDeviceVoiceAssistantPlugin.swift */; };
+		4A55386E24AD74470006641A /* GaiaDeviceUpdaterPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381D24AD74460006641A /* GaiaDeviceUpdaterPlugin.swift */; };
+		4A55386F24AD74470006641A /* GaiaBLEDeviceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55381F24AD74460006641A /* GaiaBLEDeviceConnection.swift */; };
+		4A55387024AD74470006641A /* GaiaReplayScriptDeviceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382024AD74460006641A /* GaiaReplayScriptDeviceConnection.swift */; };
+		4A55387124AD74470006641A /* GaiaDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382124AD74460006641A /* GaiaDevice.swift */; };
+		4A55387224AD74470006641A /* GaiaV3Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382224AD74460006641A /* GaiaV3Updater.swift */; };
+		4A55387324AD74470006641A /* GaiaV2Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382324AD74460006641A /* GaiaV2Updater.swift */; };
+		4A55387424AD74470006641A /* GaiaNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382524AD74460006641A /* GaiaNotifications.swift */; };
+		4A55387524AD74470006641A /* DevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382724AD74460006641A /* DevicesTableViewCell.swift */; };
+		4A55387624AD74470006641A /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382824AD74460006641A /* DevicesViewController.swift */; };
+		4A55387724AD74470006641A /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382924AD74460006641A /* DevicesViewModel.swift */; };
+		4A55387824AD74470006641A /* BLESource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382B24AD74460006641A /* BLESource.swift */; };
+		4A55387924AD74470006641A /* ConnectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382C24AD74460006641A /* ConnectionFactory.swift */; };
+		4A55387A24AD74470006641A /* ReplayFileSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382D24AD74460006641A /* ReplayFileSource.swift */; };
+		4A55387B24AD74470006641A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55382E24AD74460006641A /* AppCoordinator.swift */; };
+		4A55387C24AD74470006641A /* DeviceInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383024AD74460006641A /* DeviceInfoViewModel.swift */; };
+		4A55387D24AD74470006641A /* DeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383124AD74460006641A /* DeviceInfoViewController.swift */; };
+		4A55387E24AD74470006641A /* PacketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383324AD74460006641A /* PacketProtocol.swift */; };
+		4A55387F24AD74470006641A /* GaiaV2GATTPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383424AD74460006641A /* GaiaV2GATTPacket.swift */; };
+		4A55388024AD74470006641A /* GaiaV3GATTPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383524AD74460006641A /* GaiaV3GATTPacket.swift */; };
+		4A55388124AD74470006641A /* Gaia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383724AD74470006641A /* Gaia.swift */; };
+		4A55388224AD74470006641A /* Gaia+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383824AD74470006641A /* Gaia+Update.swift */; };
+		4A55388324AD74470006641A /* Gaia+V3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383924AD74470006641A /* Gaia+V3.swift */; };
+		4A55388424AD74470006641A /* Gaia+V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383A24AD74470006641A /* Gaia+V2.swift */; };
+		4A55388524AD74470006641A /* QTIRWCP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383C24AD74470006641A /* QTIRWCP.m */; };
+		4A55388624AD74470006641A /* QTIRWCPSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A55383E24AD74470006641A /* QTIRWCPSegment.m */; };
+		4A55388724AD74470006641A /* SettingsIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384224AD74470006641A /* SettingsIntroViewModel.swift */; };
+		4A55388824AD74470006641A /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384324AD74470006641A /* SettingRow.swift */; };
+		4A55388924AD74470006641A /* UpdateSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384624AD74470006641A /* UpdateSettingsViewController.swift */; };
+		4A55388A24AD74470006641A /* UpdateSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384724AD74470006641A /* UpdateSettingsViewModel.swift */; };
+		4A55388B24AD74470006641A /* UpdatesIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384924AD74470006641A /* UpdatesIntroViewModel.swift */; };
+		4A55388C24AD74470006641A /* UpdatesIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384A24AD74470006641A /* UpdatesIntroViewController.swift */; };
+		4A55388D24AD74470006641A /* UpdateProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384C24AD74470006641A /* UpdateProgressViewController.swift */; };
+		4A55388E24AD74470006641A /* UpdateProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384D24AD74470006641A /* UpdateProgressViewModel.swift */; };
+		4A55388F24AD74470006641A /* UpdatesAvailableFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55384F24AD74470006641A /* UpdatesAvailableFilesViewModel.swift */; };
+		4A55389024AD74470006641A /* AVIOT_KB522_3040_ADK66.1_20200615_v1.4.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4A55385024AD74470006641A /* AVIOT_KB522_3040_ADK66.1_20200615_v1.4.bin */; };
+		4A55389124AD74470006641A /* UpdatesAvailableFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385124AD74470006641A /* UpdatesAvailableFilesViewController.swift */; };
+		4A55389224AD74470006641A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385224AD74470006641A /* SettingsTableViewCell.swift */; };
+		4A55389324AD74470006641A /* VoiceAssistantSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385424AD74470006641A /* VoiceAssistantSettingsViewModel.swift */; };
+		4A55389424AD74470006641A /* VoiceAssistantSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385524AD74470006641A /* VoiceAssistantSettingsViewController.swift */; };
+		4A55389524AD74470006641A /* SettingsIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385624AD74470006641A /* SettingsIntroViewController.swift */; };
+		4A55389624AD74470006641A /* NoiseCancellationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385824AD74470006641A /* NoiseCancellationSettingsViewController.swift */; };
+		4A55389724AD74470006641A /* NoiseCancellationSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55385924AD74470006641A /* NoiseCancellationSettingsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A5536C724AD6A970006641A /* 3040Firm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3040Firm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5536CA24AD6A970006641A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A5536CC24AD6A970006641A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A5536CE24AD6A970006641A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A5536D124AD6A970006641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A5536D324AD6A980006641A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A5536D624AD6A980006641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A5536D824AD6A980006641A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A55380524AD74460006641A /* GaiaDeviceConnectionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceConnectionProtocol.swift; sourceTree = "<group>"; };
+		4A55380724AD74460006641A /* GaiaDeviceNoiseCancellationPluginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceNoiseCancellationPluginProtocol.swift; sourceTree = "<group>"; };
+		4A55380824AD74460006641A /* GaiaDevicePluginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDevicePluginProtocol.swift; sourceTree = "<group>"; };
+		4A55380924AD74460006641A /* GaiaDeviceEarbudPluginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceEarbudPluginProtocol.swift; sourceTree = "<group>"; };
+		4A55380A24AD74460006641A /* GaiaDeviceVoiceAssistantPluginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceVoiceAssistantPluginProtocol.swift; sourceTree = "<group>"; };
+		4A55380B24AD74460006641A /* GaiaDeviceUpdaterPluginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceUpdaterPluginProtocol.swift; sourceTree = "<group>"; };
+		4A55380C24AD74460006641A /* GaiaManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaManagerProtocol.swift; sourceTree = "<group>"; };
+		4A55380D24AD74460006641A /* GaiaViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaViewControllerProtocol.swift; sourceTree = "<group>"; };
+		4A55380E24AD74460006641A /* GaiaDeviceUpdaterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceUpdaterProtocol.swift; sourceTree = "<group>"; };
+		4A55380F24AD74460006641A /* GaiaViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaViewModelProtocol.swift; sourceTree = "<group>"; };
+		4A55381024AD74460006641A /* GaiaDeviceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceProtocol.swift; sourceTree = "<group>"; };
+		4A55381224AD74460006641A /* UIView+Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Icon.swift"; sourceTree = "<group>"; };
+		4A55381324AD74460006641A /* UInt16+ByteOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt16+ByteOrder.swift"; sourceTree = "<group>"; };
+		4A55381424AD74460006641A /* UInt32+ByteOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt32+ByteOrder.swift"; sourceTree = "<group>"; };
+		4A55381524AD74460006641A /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		4A55381624AD74460006641A /* Data+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+MD5.swift"; sourceTree = "<group>"; };
+		4A55381824AD74460006641A /* GaiaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaManager.swift; sourceTree = "<group>"; };
+		4A55381A24AD74460006641A /* GaiaDeviceEarbudPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceEarbudPlugin.swift; sourceTree = "<group>"; };
+		4A55381B24AD74460006641A /* GaiaDeviceNoiseCancellationPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceNoiseCancellationPlugin.swift; sourceTree = "<group>"; };
+		4A55381C24AD74460006641A /* GaiaDeviceVoiceAssistantPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceVoiceAssistantPlugin.swift; sourceTree = "<group>"; };
+		4A55381D24AD74460006641A /* GaiaDeviceUpdaterPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDeviceUpdaterPlugin.swift; sourceTree = "<group>"; };
+		4A55381F24AD74460006641A /* GaiaBLEDeviceConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaBLEDeviceConnection.swift; sourceTree = "<group>"; };
+		4A55382024AD74460006641A /* GaiaReplayScriptDeviceConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaReplayScriptDeviceConnection.swift; sourceTree = "<group>"; };
+		4A55382124AD74460006641A /* GaiaDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaDevice.swift; sourceTree = "<group>"; };
+		4A55382224AD74460006641A /* GaiaV3Updater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaV3Updater.swift; sourceTree = "<group>"; };
+		4A55382324AD74460006641A /* GaiaV2Updater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaV2Updater.swift; sourceTree = "<group>"; };
+		4A55382524AD74460006641A /* GaiaNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaNotifications.swift; sourceTree = "<group>"; };
+		4A55382724AD74460006641A /* DevicesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesTableViewCell.swift; sourceTree = "<group>"; };
+		4A55382824AD74460006641A /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		4A55382924AD74460006641A /* DevicesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		4A55382B24AD74460006641A /* BLESource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLESource.swift; sourceTree = "<group>"; };
+		4A55382C24AD74460006641A /* ConnectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionFactory.swift; sourceTree = "<group>"; };
+		4A55382D24AD74460006641A /* ReplayFileSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayFileSource.swift; sourceTree = "<group>"; };
+		4A55382E24AD74460006641A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4A55383024AD74460006641A /* DeviceInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewModel.swift; sourceTree = "<group>"; };
+		4A55383124AD74460006641A /* DeviceInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewController.swift; sourceTree = "<group>"; };
+		4A55383324AD74460006641A /* PacketProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketProtocol.swift; sourceTree = "<group>"; };
+		4A55383424AD74460006641A /* GaiaV2GATTPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaV2GATTPacket.swift; sourceTree = "<group>"; };
+		4A55383524AD74460006641A /* GaiaV3GATTPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaiaV3GATTPacket.swift; sourceTree = "<group>"; };
+		4A55383724AD74470006641A /* Gaia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gaia.swift; sourceTree = "<group>"; };
+		4A55383824AD74470006641A /* Gaia+Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gaia+Update.swift"; sourceTree = "<group>"; };
+		4A55383924AD74470006641A /* Gaia+V3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gaia+V3.swift"; sourceTree = "<group>"; };
+		4A55383A24AD74470006641A /* Gaia+V2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gaia+V2.swift"; sourceTree = "<group>"; };
+		4A55383C24AD74470006641A /* QTIRWCP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTIRWCP.m; sourceTree = "<group>"; };
+		4A55383D24AD74470006641A /* 3040Firm-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "3040Firm-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A55383E24AD74470006641A /* QTIRWCPSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTIRWCPSegment.m; sourceTree = "<group>"; };
+		4A55383F24AD74470006641A /* QTIRWCP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTIRWCP.h; sourceTree = "<group>"; };
+		4A55384024AD74470006641A /* QTIRWCPSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTIRWCPSegment.h; sourceTree = "<group>"; };
+		4A55384224AD74470006641A /* SettingsIntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsIntroViewModel.swift; sourceTree = "<group>"; };
+		4A55384324AD74470006641A /* SettingRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
+		4A55384624AD74470006641A /* UpdateSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSettingsViewController.swift; sourceTree = "<group>"; };
+		4A55384724AD74470006641A /* UpdateSettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSettingsViewModel.swift; sourceTree = "<group>"; };
+		4A55384924AD74470006641A /* UpdatesIntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesIntroViewModel.swift; sourceTree = "<group>"; };
+		4A55384A24AD74470006641A /* UpdatesIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesIntroViewController.swift; sourceTree = "<group>"; };
+		4A55384C24AD74470006641A /* UpdateProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProgressViewController.swift; sourceTree = "<group>"; };
+		4A55384D24AD74470006641A /* UpdateProgressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProgressViewModel.swift; sourceTree = "<group>"; };
+		4A55384F24AD74470006641A /* UpdatesAvailableFilesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesAvailableFilesViewModel.swift; sourceTree = "<group>"; };
+		4A55385024AD74470006641A /* AVIOT_KB522_3040_ADK66.1_20200615_v1.4.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AVIOT_KB522_3040_ADK66.1_20200615_v1.4.bin; sourceTree = "<group>"; };
+		4A55385124AD74470006641A /* UpdatesAvailableFilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesAvailableFilesViewController.swift; sourceTree = "<group>"; };
+		4A55385224AD74470006641A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		4A55385424AD74470006641A /* VoiceAssistantSettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceAssistantSettingsViewModel.swift; sourceTree = "<group>"; };
+		4A55385524AD74470006641A /* VoiceAssistantSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceAssistantSettingsViewController.swift; sourceTree = "<group>"; };
+		4A55385624AD74470006641A /* SettingsIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsIntroViewController.swift; sourceTree = "<group>"; };
+		4A55385824AD74470006641A /* NoiseCancellationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseCancellationSettingsViewController.swift; sourceTree = "<group>"; };
+		4A55385924AD74470006641A /* NoiseCancellationSettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseCancellationSettingsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A5536C424AD6A970006641A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A5536BE24AD6A970006641A = {
+			isa = PBXGroup;
+			children = (
+				4A5536C924AD6A970006641A /* 3040Firm */,
+				4A5536C824AD6A970006641A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A5536C824AD6A970006641A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A5536C724AD6A970006641A /* 3040Firm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A5536C924AD6A970006641A /* 3040Firm */ = {
+			isa = PBXGroup;
+			children = (
+				4A55382E24AD74460006641A /* AppCoordinator.swift */,
+				4A55381724AD74460006641A /* ConcreteGaiaTypes */,
+				4A55382A24AD74460006641A /* ConnectionManagement */,
+				4A55383224AD74460006641A /* DataTypes */,
+				4A55382F24AD74460006641A /* DeviceInfo */,
+				4A55382624AD74460006641A /* DevicesUI */,
+				4A55383624AD74470006641A /* Enums */,
+				4A55381124AD74460006641A /* Extensions */,
+				4A55382424AD74460006641A /* Notifications */,
+				4A55383B24AD74470006641A /* ObjectiveC */,
+				4A55380424AD74460006641A /* Protocols */,
+				4A55384124AD74470006641A /* Settings */,
+				4A5536CA24AD6A970006641A /* AppDelegate.swift */,
+				4A5536CC24AD6A970006641A /* SceneDelegate.swift */,
+				4A5536CE24AD6A970006641A /* ViewController.swift */,
+				4A5536D024AD6A970006641A /* Main.storyboard */,
+				4A5536D324AD6A980006641A /* Assets.xcassets */,
+				4A5536D524AD6A980006641A /* LaunchScreen.storyboard */,
+				4A5536D824AD6A980006641A /* Info.plist */,
+			);
+			path = 3040Firm;
+			sourceTree = "<group>";
+		};
+		4A55380424AD74460006641A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4A55380524AD74460006641A /* GaiaDeviceConnectionProtocol.swift */,
+				4A55380624AD74460006641A /* PluginProtocols */,
+				4A55380C24AD74460006641A /* GaiaManagerProtocol.swift */,
+				4A55380D24AD74460006641A /* GaiaViewControllerProtocol.swift */,
+				4A55380E24AD74460006641A /* GaiaDeviceUpdaterProtocol.swift */,
+				4A55380F24AD74460006641A /* GaiaViewModelProtocol.swift */,
+				4A55381024AD74460006641A /* GaiaDeviceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4A55380624AD74460006641A /* PluginProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				4A55380724AD74460006641A /* GaiaDeviceNoiseCancellationPluginProtocol.swift */,
+				4A55380824AD74460006641A /* GaiaDevicePluginProtocol.swift */,
+				4A55380924AD74460006641A /* GaiaDeviceEarbudPluginProtocol.swift */,
+				4A55380A24AD74460006641A /* GaiaDeviceVoiceAssistantPluginProtocol.swift */,
+				4A55380B24AD74460006641A /* GaiaDeviceUpdaterPluginProtocol.swift */,
+			);
+			path = PluginProtocols;
+			sourceTree = "<group>";
+		};
+		4A55381124AD74460006641A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A55381224AD74460006641A /* UIView+Icon.swift */,
+				4A55381324AD74460006641A /* UInt16+ByteOrder.swift */,
+				4A55381424AD74460006641A /* UInt32+ByteOrder.swift */,
+				4A55381524AD74460006641A /* String+MD5.swift */,
+				4A55381624AD74460006641A /* Data+MD5.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A55381724AD74460006641A /* ConcreteGaiaTypes */ = {
+			isa = PBXGroup;
+			children = (
+				4A55381824AD74460006641A /* GaiaManager.swift */,
+				4A55381924AD74460006641A /* Plugins */,
+				4A55381E24AD74460006641A /* Connections */,
+				4A55382124AD74460006641A /* GaiaDevice.swift */,
+				4A55382224AD74460006641A /* GaiaV3Updater.swift */,
+				4A55382324AD74460006641A /* GaiaV2Updater.swift */,
+			);
+			path = ConcreteGaiaTypes;
+			sourceTree = "<group>";
+		};
+		4A55381924AD74460006641A /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4A55381A24AD74460006641A /* GaiaDeviceEarbudPlugin.swift */,
+				4A55381B24AD74460006641A /* GaiaDeviceNoiseCancellationPlugin.swift */,
+				4A55381C24AD74460006641A /* GaiaDeviceVoiceAssistantPlugin.swift */,
+				4A55381D24AD74460006641A /* GaiaDeviceUpdaterPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		4A55381E24AD74460006641A /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				4A55381F24AD74460006641A /* GaiaBLEDeviceConnection.swift */,
+				4A55382024AD74460006641A /* GaiaReplayScriptDeviceConnection.swift */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		4A55382424AD74460006641A /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4A55382524AD74460006641A /* GaiaNotifications.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4A55382624AD74460006641A /* DevicesUI */ = {
+			isa = PBXGroup;
+			children = (
+				4A55382724AD74460006641A /* DevicesTableViewCell.swift */,
+				4A55382824AD74460006641A /* DevicesViewController.swift */,
+				4A55382924AD74460006641A /* DevicesViewModel.swift */,
+			);
+			path = DevicesUI;
+			sourceTree = "<group>";
+		};
+		4A55382A24AD74460006641A /* ConnectionManagement */ = {
+			isa = PBXGroup;
+			children = (
+				4A55382B24AD74460006641A /* BLESource.swift */,
+				4A55382C24AD74460006641A /* ConnectionFactory.swift */,
+				4A55382D24AD74460006641A /* ReplayFileSource.swift */,
+			);
+			path = ConnectionManagement;
+			sourceTree = "<group>";
+		};
+		4A55382F24AD74460006641A /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4A55383024AD74460006641A /* DeviceInfoViewModel.swift */,
+				4A55383124AD74460006641A /* DeviceInfoViewController.swift */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		4A55383224AD74460006641A /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				4A55383324AD74460006641A /* PacketProtocol.swift */,
+				4A55383424AD74460006641A /* GaiaV2GATTPacket.swift */,
+				4A55383524AD74460006641A /* GaiaV3GATTPacket.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		4A55383624AD74470006641A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4A55383724AD74470006641A /* Gaia.swift */,
+				4A55383824AD74470006641A /* Gaia+Update.swift */,
+				4A55383924AD74470006641A /* Gaia+V3.swift */,
+				4A55383A24AD74470006641A /* Gaia+V2.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4A55383B24AD74470006641A /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				4A55383F24AD74470006641A /* QTIRWCP.h */,
+				4A55383C24AD74470006641A /* QTIRWCP.m */,
+				4A55383D24AD74470006641A /* 3040Firm-Bridging-Header.h */,
+				4A55383E24AD74470006641A /* QTIRWCPSegment.m */,
+				4A55384024AD74470006641A /* QTIRWCPSegment.h */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		4A55384124AD74470006641A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4A55384224AD74470006641A /* SettingsIntroViewModel.swift */,
+				4A55384324AD74470006641A /* SettingRow.swift */,
+				4A55384424AD74470006641A /* Updates */,
+				4A55385224AD74470006641A /* SettingsTableViewCell.swift */,
+				4A55385324AD74470006641A /* VoiceAssistant */,
+				4A55385624AD74470006641A /* SettingsIntroViewController.swift */,
+				4A55385724AD74470006641A /* NoiseCancellation */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4A55384424AD74470006641A /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				4A55384524AD74470006641A /* Settings */,
+				4A55384824AD74470006641A /* Intro */,
+				4A55384B24AD74470006641A /* Progress */,
+				4A55384E24AD74470006641A /* Files */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		4A55384524AD74470006641A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4A55384624AD74470006641A /* UpdateSettingsViewController.swift */,
+				4A55384724AD74470006641A /* UpdateSettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4A55384824AD74470006641A /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				4A55384924AD74470006641A /* UpdatesIntroViewModel.swift */,
+				4A55384A24AD74470006641A /* UpdatesIntroViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		4A55384B24AD74470006641A /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				4A55384C24AD74470006641A /* UpdateProgressViewController.swift */,
+				4A55384D24AD74470006641A /* UpdateProgressViewModel.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		4A55384E24AD74470006641A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A55384F24AD74470006641A /* UpdatesAvailableFilesViewModel.swift */,
+				4A55385024AD74470006641A /* AVIOT_KB522_3040_ADK66.1_20200615_v1.4.bin */,
+				4A55385124AD74470006641A /* UpdatesAvailableFilesViewController.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		4A55385324AD74470006641A /* VoiceAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				4A55385424AD74470006641A /* VoiceAssistantSettingsViewModel.swift */,
+				4A55385524AD74470006641A /* VoiceAssistantSettingsViewController.swift */,
+			);
+			path = VoiceAssistant;
+			sourceTree = "<group>";
+		};
+		4A55385724AD74470006641A /* NoiseCancellation */ = {
+			isa = PBXGroup;
+			children = (
+				4A55385824AD74470006641A /* NoiseCancellationSettingsViewController.swift */,
+				4A55385924AD74470006641A /* NoiseCancellationSettingsViewModel.swift */,
+			);
+			path = NoiseCancellation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A5536C624AD6A970006641A /* 3040Firm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5536DB24AD6A980006641A /* Build configuration list for PBXNativeTarget "3040Firm" */;
+			buildPhases = (
+				4A5536C324AD6A970006641A /* Sources */,
+				4A5536C424AD6A970006641A /* Frameworks */,
+				4A5536C524AD6A970006641A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3040Firm;
+			productName = 3040Firm;
+			productReference = 4A5536C724AD6A970006641A /* 3040Firm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A5536BF24AD6A970006641A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = kiss;
+				TargetAttributes = {
+					4A5536C624AD6A970006641A = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 4A5536C224AD6A970006641A /* Build configuration list for PBXProject "3040Firm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A5536BE24AD6A970006641A;
+			productRefGroup = 4A5536C824AD6A970006641A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A5536C624AD6A970006641A /* 3040Firm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A5536C524AD6A970006641A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A55389024AD74470006641A /* AVIOT_KB522_3040_ADK66.1_20200615_v1.4.bin in Resources */,
+				4A5536D724AD6A980006641A /* LaunchScreen.storyboard in Resources */,
+				4A5536D424AD6A980006641A /* Assets.xcassets in Resources */,
+				4A5536D224AD6A970006641A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A5536C324AD6A970006641A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A55386924AD74470006641A /* Data+MD5.swift in Sources */,
+				4A55389624AD74470006641A /* NoiseCancellationSettingsViewController.swift in Sources */,
+				4A55388824AD74470006641A /* SettingRow.swift in Sources */,
+				4A55387B24AD74470006641A /* AppCoordinator.swift in Sources */,
+				4A55386524AD74470006641A /* UIView+Icon.swift in Sources */,
+				4A55388424AD74470006641A /* Gaia+V2.swift in Sources */,
+				4A55387F24AD74470006641A /* GaiaV2GATTPacket.swift in Sources */,
+				4A5536CF24AD6A970006641A /* ViewController.swift in Sources */,
+				4A55386124AD74470006641A /* GaiaViewControllerProtocol.swift in Sources */,
+				4A55386D24AD74470006641A /* GaiaDeviceVoiceAssistantPlugin.swift in Sources */,
+				4A55387C24AD74470006641A /* DeviceInfoViewModel.swift in Sources */,
+				4A55389524AD74470006641A /* SettingsIntroViewController.swift in Sources */,
+				4A55388224AD74470006641A /* Gaia+Update.swift in Sources */,
+				4A55386F24AD74470006641A /* GaiaBLEDeviceConnection.swift in Sources */,
+				4A55386824AD74470006641A /* String+MD5.swift in Sources */,
+				4A55387124AD74470006641A /* GaiaDevice.swift in Sources */,
+				4A55387324AD74470006641A /* GaiaV2Updater.swift in Sources */,
+				4A55386624AD74470006641A /* UInt16+ByteOrder.swift in Sources */,
+				4A55388A24AD74470006641A /* UpdateSettingsViewModel.swift in Sources */,
+				4A55387824AD74470006641A /* BLESource.swift in Sources */,
+				4A55388024AD74470006641A /* GaiaV3GATTPacket.swift in Sources */,
+				4A55388724AD74470006641A /* SettingsIntroViewModel.swift in Sources */,
+				4A55388E24AD74470006641A /* UpdateProgressViewModel.swift in Sources */,
+				4A55385A24AD74470006641A /* GaiaDeviceConnectionProtocol.swift in Sources */,
+				4A55386424AD74470006641A /* GaiaDeviceProtocol.swift in Sources */,
+				4A55386324AD74470006641A /* GaiaViewModelProtocol.swift in Sources */,
+				4A55386A24AD74470006641A /* GaiaManager.swift in Sources */,
+				4A55386B24AD74470006641A /* GaiaDeviceEarbudPlugin.swift in Sources */,
+				4A55385E24AD74470006641A /* GaiaDeviceVoiceAssistantPluginProtocol.swift in Sources */,
+				4A5536CB24AD6A970006641A /* AppDelegate.swift in Sources */,
+				4A55388B24AD74470006641A /* UpdatesIntroViewModel.swift in Sources */,
+				4A55388624AD74470006641A /* QTIRWCPSegment.m in Sources */,
+				4A55387D24AD74470006641A /* DeviceInfoViewController.swift in Sources */,
+				4A55386E24AD74470006641A /* GaiaDeviceUpdaterPlugin.swift in Sources */,
+				4A55388D24AD74470006641A /* UpdateProgressViewController.swift in Sources */,
+				4A55387A24AD74470006641A /* ReplayFileSource.swift in Sources */,
+				4A55385B24AD74470006641A /* GaiaDeviceNoiseCancellationPluginProtocol.swift in Sources */,
+				4A55387724AD74470006641A /* DevicesViewModel.swift in Sources */,
+				4A55387924AD74470006641A /* ConnectionFactory.swift in Sources */,
+				4A55387024AD74470006641A /* GaiaReplayScriptDeviceConnection.swift in Sources */,
+				4A55385C24AD74470006641A /* GaiaDevicePluginProtocol.swift in Sources */,
+				4A55389424AD74470006641A /* VoiceAssistantSettingsViewController.swift in Sources */,
+				4A55386224AD74470006641A /* GaiaDeviceUpdaterProtocol.swift in Sources */,
+				4A55389724AD74470006641A /* NoiseCancellationSettingsViewModel.swift in Sources */,
+				4A55386C24AD74470006641A /* GaiaDeviceNoiseCancellationPlugin.swift in Sources */,
+				4A55389324AD74470006641A /* VoiceAssistantSettingsViewModel.swift in Sources */,
+				4A55387224AD74470006641A /* GaiaV3Updater.swift in Sources */,
+				4A55387624AD74470006641A /* DevicesViewController.swift in Sources */,
+				4A55388324AD74470006641A /* Gaia+V3.swift in Sources */,
+				4A55388C24AD74470006641A /* UpdatesIntroViewController.swift in Sources */,
+				4A55385D24AD74470006641A /* GaiaDeviceEarbudPluginProtocol.swift in Sources */,
+				4A55387E24AD74470006641A /* PacketProtocol.swift in Sources */,
+				4A55389224AD74470006641A /* SettingsTableViewCell.swift in Sources */,
+				4A55387524AD74470006641A /* DevicesTableViewCell.swift in Sources */,
+				4A55386024AD74470006641A /* GaiaManagerProtocol.swift in Sources */,
+				4A55387424AD74470006641A /* GaiaNotifications.swift in Sources */,
+				4A55388F24AD74470006641A /* UpdatesAvailableFilesViewModel.swift in Sources */,
+				4A55385F24AD74470006641A /* GaiaDeviceUpdaterPluginProtocol.swift in Sources */,
+				4A55388124AD74470006641A /* Gaia.swift in Sources */,
+				4A55388524AD74470006641A /* QTIRWCP.m in Sources */,
+				4A55388924AD74470006641A /* UpdateSettingsViewController.swift in Sources */,
+				4A55389124AD74470006641A /* UpdatesAvailableFilesViewController.swift in Sources */,
+				4A5536CD24AD6A970006641A /* SceneDelegate.swift in Sources */,
+				4A55386724AD74470006641A /* UInt32+ByteOrder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A5536D024AD6A970006641A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A5536D124AD6A970006641A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A5536D524AD6A980006641A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A5536D624AD6A980006641A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A5536D924AD6A980006641A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A5536DA24AD6A980006641A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A5536DC24AD6A980006641A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6HCVK8WA7;
+				INFOPLIST_FILE = 3040Firm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiss.-040Firm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "3040Firm/ObjectiveC/3040Firm-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4A5536DD24AD6A980006641A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6HCVK8WA7;
+				INFOPLIST_FILE = 3040Firm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiss.-040Firm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "3040Firm/ObjectiveC/3040Firm-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A5536C224AD6A970006641A /* Build configuration list for PBXProject "3040Firm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5536D924AD6A980006641A /* Debug */,
+				4A5536DA24AD6A980006641A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5536DB24AD6A980006641A /* Build configuration list for PBXNativeTarget "3040Firm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5536DC24AD6A980006641A /* Debug */,
+				4A5536DD24AD6A980006641A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A5536BF24AD6A970006641A /* Project object */;
+}

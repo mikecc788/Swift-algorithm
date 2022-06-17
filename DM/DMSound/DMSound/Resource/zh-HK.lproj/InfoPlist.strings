@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  DMSound
+
+  Created by kiss on 2020/6/1.
+  Copyright © 2020 kiss. All rights reserved.
+*/
+CFBundleDisplayName = "DM Sound";
+NSBluetoothAlwaysUsageDescription = "為了設定耳機，請打開藍牙與耳機連接";
+NSBluetoothPeripheralUsageDescription = "需要打開藍牙許可權才能訪問您的藍牙";

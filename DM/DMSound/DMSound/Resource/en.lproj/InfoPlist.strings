@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  DMSound
+
+  Created by kiss on 2020/6/1.
+  Copyright © 2020 kiss. All rights reserved.
+*/
+CFBundleDisplayName = "DM Sound";
+NSBluetoothAlwaysUsageDescription = "please turn on the Bluetooth and connect with earbud to playing music";
+NSBluetoothPeripheralUsageDescription = "Need to turn on Bluetooth permission to access your Bluetooth";

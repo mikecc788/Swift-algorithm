@@ -1,0 +1,51 @@
+PODS:
+  - BRPickerView (2.7.6):
+    - BRPickerView/AddressPickerView (= 2.7.6)
+    - BRPickerView/Base (= 2.7.6)
+    - BRPickerView/DatePickerView (= 2.7.6)
+    - BRPickerView/StringPickerView (= 2.7.6)
+  - BRPickerView/AddressPickerView (2.7.6):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.7.6)
+  - BRPickerView/DatePickerView (2.7.6):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.7.6):
+    - BRPickerView/Base
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.5)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - SGPagingView (1.7.2)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - BRPickerView
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - PNChart
+  - SGPagingView (~> 1.7.2)
+
+SPEC REPOS:
+  trunk:
+    - BRPickerView
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - PNChart
+    - SGPagingView
+    - UICountingLabel
+
+SPEC CHECKSUMS:
+  BRPickerView: 2a1620caf218e37a3aca9626732719a419928b15
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  SGPagingView: 0b91bd360370e56a6496b06df9b3e28bc3f075cc
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+PODFILE CHECKSUM: 7d8d3fc03d71ff5faf850b920c369ce1a8c576bf
+
+COCOAPODS: 1.11.2
