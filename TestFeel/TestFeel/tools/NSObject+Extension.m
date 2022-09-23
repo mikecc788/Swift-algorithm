@@ -246,6 +246,37 @@
     }
     return  target;
 }
+//时间戳转时间
+- (NSString *)timestampToDate:(NSString *)timeStamp {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+
+     [formatter setDateStyle:NSDateFormatterMediumStyle];
+
+     [formatter setTimeStyle:NSDateFormatterShortStyle];
+
+     [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"]; // （@"YYYY-MM-dd hh:mm:ss"）
+    
+    NSString *arg = timeStamp;
+    if (![timeStamp isKindOfClass:[NSString class]]) {
+        arg = [NSString stringWithFormat:@"%@", timeStamp];
+    }
+    NSTimeInterval time = [arg doubleValue];
+    
+    NSDate *confromTimesp =  [NSDate dateWithTimeIntervalSince1970:time];
+    NSString *confromTimespStr = [formatter stringFromDate:confromTimesp];
+    
+    return confromTimespStr;
+}
+//// 时间戳转时间,时间戳为13位是精确到毫秒的，10位精确到秒
+//- (NSString *)getDateStringWithTimeStr:(NSString *)str{
+//    NSTimeInterval time=[str doubleValue]/1000;//传入的时间戳str如果是精确到毫秒的记得要/1000
+//    NSDate *detailDate=[NSDate dateWithTimeIntervalSince1970:time];
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
+//    //设定时间格式,这里可以设置成自己需要的格式
+//        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss SS"];
+//    NSString *currentDateStr = [dateFormatter stringFromDate: detailDate];
+//    return currentDateStr;
+//}
 
 +(NSString*)getSecondByMinute:(NSString*)min{
     NSString *target;

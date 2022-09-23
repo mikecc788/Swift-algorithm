@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString*)getSecondByMinute:(NSString*)min;
 
 + (NSString*)getTempValue:(NSString *)str;
+- (NSString *)timestampToDate:(NSString *)timeStamp;
 @end
 
 NS_ASSUME_NONNULL_END

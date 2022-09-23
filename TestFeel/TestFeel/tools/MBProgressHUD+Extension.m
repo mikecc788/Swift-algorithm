@@ -123,4 +123,22 @@
     [hud hideAnimated:YES afterDelay:1];
 }
 
++(void)showToast:(NSString *)message ToView:(UIView *)view{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.label.text=message;
+    hud.label.numberOfLines = 0;
+    // 代表需要蒙版效果
+    hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.backgroundView.color =[UIColor colorWithWhite:0.f alpha:.2f];
+}
+
++ (void)hideHUDForView:(UIView *)view{
+    [self hideHUDForView:view animated:YES];
+}
+
++ (void)hideHUD{
+    [self hideHUDForView:nil];
+}
+
+
 @end

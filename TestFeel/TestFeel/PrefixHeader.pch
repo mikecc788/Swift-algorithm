@@ -9,6 +9,9 @@
 #define PrefixHeader_pch
 #import "UIColor+Extension.h"
 #import "LFSAppUserSetting.h"
+#import <Masonry.h>
+#import "UIView+Extension.h"
+
 #define kKeyWindow [[[UIApplication sharedApplication] windows] objectAtIndex:0]
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define statusBar [[UIApplication sharedApplication] statusBarFrame].size.height
@@ -19,7 +22,36 @@
 #define kMaxY(Y) CGRectGetMaxY(Y)
 #define Gloabal_bg [UIColor colorFromHexStr:@"#854794"]
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifndef hq_weak
+#if DEBUG
+#if __has_feature(objc_arc)
+#define hq_weak(object) __weak __typeof(object) weak##_##object = object;
+#else
+#define hq_weak(object) __block __typeof(object) weak##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define hq_weak(object) __weak __typeof(object) weak##_##object = object;
+#else
+#define hq_weak(object) __block __typeof(object) weak##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef hq_strong
+#if DEBUG
+#if __has_feature(objc_arc)
+#define hq_strong(object) __typeof(object) object = weak##_##object;
+#else
+#define hq_strong(object) __typeof(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define hq_strong(object) __typeof(object) object = weak##_##object;
+#else
+#define hq_strong(object) __typeof(object) object = block##_##object;
+#endif
+#endif
+#endif
 
 #endif /* PrefixHeader_pch */

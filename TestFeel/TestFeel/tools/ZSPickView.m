@@ -130,7 +130,7 @@
     if (self.isNum) {
         if (component == 0) {
             
-            return [NSString stringWithFormat:@"%@",self.oneArr[row]];
+            return [NSString stringWithFormat:@"%@       .",self.oneArr[row]];
              
         }
         if (component == 1) {

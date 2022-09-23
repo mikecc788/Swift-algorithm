@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)showAutoMessage:(NSString *)message toView:(UIView *)view;
 +(void)showMessage:(NSString *)message ToView:(UIView *)view;
 + (void)showMessage:(NSString *)message time:(CGFloat)time toView:(UIView *)view;
++(void)showToast:(NSString *)message ToView:(UIView *)view;
++ (void)hideHUDForView:(UIView *)view;
++ (void)hideHUD;
 @end
 
 NS_ASSUME_NONNULL_END

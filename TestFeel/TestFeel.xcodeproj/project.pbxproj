@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		189251B7F987CFC67AF9790D /* libPods-TestFeel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C02BC604AF223937A5A969B /* libPods-TestFeel.a */; };
 		D119175A27F7032800BAAF43 /* LFSLineChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D119175927F7032800BAAF43 /* LFSLineChartVC.m */; };
+		D14B786D28DD851E00B356F7 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B786C28DD851E00B356F7 /* LoginPresenter.m */; };
+		D14B787028DD857A00B356F7 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B786F28DD857A00B356F7 /* Presenter.m */; };
+		D14B787328DD85FC00B356F7 /* LoginTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B787228DD85FC00B356F7 /* LoginTask.m */; };
+		D14B787728DD86CF00B356F7 /* LoginDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B787628DD86CF00B356F7 /* LoginDisk.m */; };
+		D14B787A28DD871300B356F7 /* ErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B787928DD871300B356F7 /* ErrorMessage.m */; };
+		D14B787D28DD872400B356F7 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B787C28DD872400B356F7 /* UserInfoModel.m */; };
+		D14B788228DD8FEF00B356F7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B788028DD8FEF00B356F7 /* RegisterViewController.m */; };
+		D14B788328DD8FEF00B356F7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14B788128DD8FEF00B356F7 /* RegisterViewController.xib */; };
+		D14B788728DD9BE600B356F7 /* RegisterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B788628DD9BE600B356F7 /* RegisterPresenter.m */; };
 		D14C244C280D3294003B01DB /* device的副本 in Resources */ = {isa = PBXBuildFile; fileRef = D14C244B280D3294003B01DB /* device的副本 */; };
 		D176A26828096DC700A1D395 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D176A26728096DC700A1D395 /* MBProgressHUD+Extension.m */; };
 		D176A26B28096FB200A1D395 /* KSAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D176A26A28096FB200A1D395 /* KSAlertTool.m */; };
@@ -21,6 +30,7 @@
 		D1ACAE5F27D99A5100572D08 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ACAE5D27D99A5100572D08 /* UIView+Extension.m */; };
 		D1B0ACA127E9710400768ABB /* HYRadix.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B0ACA027E9710400768ABB /* HYRadix.m */; };
 		D1B0ACA427E975AB00768ABB /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B0ACA227E975AB00768ABB /* NSObject+Extension.m */; };
+		D1B4BB1528B0DEFB008F179F /* TopTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4BB1428B0DEFB008F179F /* TopTipsView.m */; };
 		D1BE636D27F3E56F00BBB29D /* LFSPopTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE636C27F3E56F00BBB29D /* LFSPopTextView.m */; };
 		D1BE637627F3E73D00BBB29D /* ScreenBlurry.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE637227F3E73D00BBB29D /* ScreenBlurry.m */; };
 		D1BE637727F3E73D00BBB29D /* UIImage+BlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE637527F3E73D00BBB29D /* UIImage+BlurGlass.m */; };
@@ -28,6 +38,8 @@
 		D1C1873927F2AE190017F873 /* UIButton+AttStrAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C1873727F2AE190017F873 /* UIButton+AttStrAlignment.m */; };
 		D1C1873A27F2AE190017F873 /* UIButton+Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C1873827F2AE190017F873 /* UIButton+Alignment.m */; };
 		D1C8A7222800118B00ED477B /* LFSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C8A7212800118B00ED477B /* LFSDeviceInfo.m */; };
+		D1C9579528C996850006FA0F /* LFSPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C9579428C996850006FA0F /* LFSPresenter.m */; };
+		D1C9579828C996F90006FA0F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C9579728C996F90006FA0F /* ThirdViewController.m */; };
 		D1CBCE2227D87A0600207E4D /* ZSPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBCE2127D87A0600207E4D /* ZSPickView.m */; };
 		D1CBCE2527D87A7C00207E4D /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBCE2427D87A7C00207E4D /* UIColor+Extension.m */; };
 		D1DF20FE27D60BF600D2B3B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF20FD27D60BF600D2B3B6 /* AppDelegate.m */; };
@@ -39,6 +51,7 @@
 		D1DF210F27D60BF600D2B3B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF210E27D60BF600D2B3B6 /* main.m */; };
 		D1DF211727D60C0800D2B3B6 /* ZFProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF211527D60C0800D2B3B6 /* ZFProgressView.m */; };
 		D1E52D57280FB8FB00AAE966 /* LFSAppUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E52D56280FB8FB00AAE966 /* LFSAppUserSetting.m */; };
+		D1FC4A7828B7124200FFD3F4 /* LFSFitSmartPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC4A7728B7124200FFD3F4 /* LFSFitSmartPopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +60,26 @@
 		9C02BC604AF223937A5A969B /* libPods-TestFeel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestFeel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D119175827F7032800BAAF43 /* LFSLineChartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSLineChartVC.h; sourceTree = "<group>"; };
 		D119175927F7032800BAAF43 /* LFSLineChartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSLineChartVC.m; sourceTree = "<group>"; };
+		D14B786A28DD84EA00B356F7 /* LoginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginProtocol.h; sourceTree = "<group>"; };
+		D14B786B28DD851E00B356F7 /* LoginPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPresenter.h; sourceTree = "<group>"; };
+		D14B786C28DD851E00B356F7 /* LoginPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPresenter.m; sourceTree = "<group>"; };
+		D14B786E28DD857A00B356F7 /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		D14B786F28DD857A00B356F7 /* Presenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		D14B787128DD85FC00B356F7 /* LoginTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTask.h; sourceTree = "<group>"; };
+		D14B787228DD85FC00B356F7 /* LoginTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTask.m; sourceTree = "<group>"; };
+		D14B787428DD862F00B356F7 /* LoginTaskProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTaskProtocol.h; sourceTree = "<group>"; };
+		D14B787528DD86CF00B356F7 /* LoginDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDisk.h; sourceTree = "<group>"; };
+		D14B787628DD86CF00B356F7 /* LoginDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDisk.m; sourceTree = "<group>"; };
+		D14B787828DD871300B356F7 /* ErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorMessage.h; sourceTree = "<group>"; };
+		D14B787928DD871300B356F7 /* ErrorMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorMessage.m; sourceTree = "<group>"; };
+		D14B787B28DD872400B356F7 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		D14B787C28DD872400B356F7 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		D14B787F28DD8FEF00B356F7 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		D14B788028DD8FEF00B356F7 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		D14B788128DD8FEF00B356F7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		D14B788428DD907900B356F7 /* RegisterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterProtocol.h; sourceTree = "<group>"; };
+		D14B788528DD9BE600B356F7 /* RegisterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterPresenter.h; sourceTree = "<group>"; };
+		D14B788628DD9BE600B356F7 /* RegisterPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterPresenter.m; sourceTree = "<group>"; };
 		D14C244B280D3294003B01DB /* device的副本 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "device的副本"; sourceTree = "<group>"; };
 		D176A26628096DC700A1D395 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
 		D176A26728096DC700A1D395 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
@@ -70,6 +103,8 @@
 		D1B0ACA027E9710400768ABB /* HYRadix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRadix.m; sourceTree = "<group>"; };
 		D1B0ACA227E975AB00768ABB /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 		D1B0ACA327E975AB00768ABB /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		D1B4BB1328B0DEFB008F179F /* TopTipsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopTipsView.h; sourceTree = "<group>"; };
+		D1B4BB1428B0DEFB008F179F /* TopTipsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopTipsView.m; sourceTree = "<group>"; };
 		D1BE636B27F3E56F00BBB29D /* LFSPopTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSPopTextView.h; sourceTree = "<group>"; };
 		D1BE636C27F3E56F00BBB29D /* LFSPopTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSPopTextView.m; sourceTree = "<group>"; };
 		D1BE637227F3E73D00BBB29D /* ScreenBlurry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenBlurry.m; sourceTree = "<group>"; };
@@ -84,6 +119,10 @@
 		D1C1873827F2AE190017F873 /* UIButton+Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Alignment.m"; sourceTree = "<group>"; };
 		D1C8A7202800118B00ED477B /* LFSDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSDeviceInfo.h; sourceTree = "<group>"; };
 		D1C8A7212800118B00ED477B /* LFSDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSDeviceInfo.m; sourceTree = "<group>"; };
+		D1C9579328C996850006FA0F /* LFSPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSPresenter.h; sourceTree = "<group>"; };
+		D1C9579428C996850006FA0F /* LFSPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSPresenter.m; sourceTree = "<group>"; };
+		D1C9579628C996F90006FA0F /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		D1C9579728C996F90006FA0F /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		D1CBCE2027D87A0600207E4D /* ZSPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPickView.h; sourceTree = "<group>"; };
 		D1CBCE2127D87A0600207E4D /* ZSPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPickView.m; sourceTree = "<group>"; };
 		D1CBCE2327D87A7C00207E4D /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
@@ -104,6 +143,8 @@
 		D1DF211627D60C0800D2B3B6 /* ZFProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFProgressView.h; sourceTree = "<group>"; };
 		D1E52D55280FB8FB00AAE966 /* LFSAppUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAppUserSetting.h; sourceTree = "<group>"; };
 		D1E52D56280FB8FB00AAE966 /* LFSAppUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAppUserSetting.m; sourceTree = "<group>"; };
+		D1FC4A7628B7124200FFD3F4 /* LFSFitSmartPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSFitSmartPopView.h; sourceTree = "<group>"; };
+		D1FC4A7728B7124200FFD3F4 /* LFSFitSmartPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSFitSmartPopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +174,49 @@
 				9C02BC604AF223937A5A969B /* libPods-TestFeel.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14B786828DD84A700B356F7 /* present */ = {
+			isa = PBXGroup;
+			children = (
+				D14B787E28DD8FCD00B356F7 /* register */,
+				D14B786928DD84B600B356F7 /* login */,
+				D14B786E28DD857A00B356F7 /* Presenter.h */,
+				D14B786F28DD857A00B356F7 /* Presenter.m */,
+			);
+			path = present;
+			sourceTree = "<group>";
+		};
+		D14B786928DD84B600B356F7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D14B786A28DD84EA00B356F7 /* LoginProtocol.h */,
+				D14B787428DD862F00B356F7 /* LoginTaskProtocol.h */,
+				D14B786B28DD851E00B356F7 /* LoginPresenter.h */,
+				D14B786C28DD851E00B356F7 /* LoginPresenter.m */,
+				D14B787128DD85FC00B356F7 /* LoginTask.h */,
+				D14B787228DD85FC00B356F7 /* LoginTask.m */,
+				D14B787528DD86CF00B356F7 /* LoginDisk.h */,
+				D14B787628DD86CF00B356F7 /* LoginDisk.m */,
+				D14B787828DD871300B356F7 /* ErrorMessage.h */,
+				D14B787928DD871300B356F7 /* ErrorMessage.m */,
+				D14B787B28DD872400B356F7 /* UserInfoModel.h */,
+				D14B787C28DD872400B356F7 /* UserInfoModel.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		D14B787E28DD8FCD00B356F7 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				D14B787F28DD8FEF00B356F7 /* RegisterViewController.h */,
+				D14B788028DD8FEF00B356F7 /* RegisterViewController.m */,
+				D14B788128DD8FEF00B356F7 /* RegisterViewController.xib */,
+				D14B788428DD907900B356F7 /* RegisterProtocol.h */,
+				D14B788528DD9BE600B356F7 /* RegisterPresenter.h */,
+				D14B788628DD9BE600B356F7 /* RegisterPresenter.m */,
+			);
+			path = register;
 			sourceTree = "<group>";
 		};
 		D14C244A280D325D003B01DB /* resource */ = {
@@ -184,6 +268,8 @@
 				D176A26728096DC700A1D395 /* MBProgressHUD+Extension.m */,
 				D176A26928096FB200A1D395 /* KSAlertTool.h */,
 				D176A26A28096FB200A1D395 /* KSAlertTool.m */,
+				D1FC4A7628B7124200FFD3F4 /* LFSFitSmartPopView.h */,
+				D1FC4A7728B7124200FFD3F4 /* LFSFitSmartPopView.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -191,6 +277,7 @@
 		D1ACAE5827D9989500572D08 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				D14B786828DD84A700B356F7 /* present */,
 				D1996FA327DB501B00830D59 /* SecondViewController.h */,
 				D1996FA427DB501B00830D59 /* SecondViewController.m */,
 				D119175827F7032800BAAF43 /* LFSLineChartVC.h */,
@@ -198,6 +285,8 @@
 				D1996FA927DB54D300830D59 /* CircleViewController.h */,
 				D1996FAA27DB54D300830D59 /* CircleViewController.m */,
 				D1996FAB27DB54D300830D59 /* CircleViewController.xib */,
+				D1C9579628C996F90006FA0F /* ThirdViewController.h */,
+				D1C9579728C996F90006FA0F /* ThirdViewController.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -205,6 +294,8 @@
 		D1ACAE5927D998A200572D08 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D1B4BB1328B0DEFB008F179F /* TopTipsView.h */,
+				D1B4BB1428B0DEFB008F179F /* TopTipsView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -240,6 +331,8 @@
 				D1DF210027D60BF600D2B3B6 /* SceneDelegate.m */,
 				D1DF210227D60BF600D2B3B6 /* ViewController.h */,
 				D1DF210327D60BF600D2B3B6 /* ViewController.m */,
+				D1C9579328C996850006FA0F /* LFSPresenter.h */,
+				D1C9579428C996850006FA0F /* LFSPresenter.m */,
 				D1DF210527D60BF600D2B3B6 /* Main.storyboard */,
 				D1DF210827D60BF600D2B3B6 /* Assets.xcassets */,
 				D1DF210A27D60BF600D2B3B6 /* LaunchScreen.storyboard */,
@@ -314,6 +407,7 @@
 				D1DF210927D60BF600D2B3B6 /* Assets.xcassets in Resources */,
 				D1996FAD27DB54D300830D59 /* CircleViewController.xib in Resources */,
 				D1DF210727D60BF600D2B3B6 /* Main.storyboard in Resources */,
+				D14B788328DD8FEF00B356F7 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,16 +462,24 @@
 			files = (
 				D1996F9B27DB2A5400830D59 /* LFSBottomActionSheet.m in Sources */,
 				D1ACAE5F27D99A5100572D08 /* UIView+Extension.m in Sources */,
+				D14B788228DD8FEF00B356F7 /* RegisterViewController.m in Sources */,
+				D14B787D28DD872400B356F7 /* UserInfoModel.m in Sources */,
 				D1DF210427D60BF600D2B3B6 /* ViewController.m in Sources */,
 				D1ACAE5C27D99A1600572D08 /* KSConfigSliderView.m in Sources */,
+				D1C9579528C996850006FA0F /* LFSPresenter.m in Sources */,
 				D1DF20FE27D60BF600D2B3B6 /* AppDelegate.m in Sources */,
+				D14B787728DD86CF00B356F7 /* LoginDisk.m in Sources */,
 				D1B0ACA427E975AB00768ABB /* NSObject+Extension.m in Sources */,
+				D14B786D28DD851E00B356F7 /* LoginPresenter.m in Sources */,
+				D1B4BB1528B0DEFB008F179F /* TopTipsView.m in Sources */,
 				D1C8A7222800118B00ED477B /* LFSDeviceInfo.m in Sources */,
 				D1DF210F27D60BF600D2B3B6 /* main.m in Sources */,
 				D1C1873A27F2AE190017F873 /* UIButton+Alignment.m in Sources */,
 				D1CBCE2527D87A7C00207E4D /* UIColor+Extension.m in Sources */,
 				D1BE637627F3E73D00BBB29D /* ScreenBlurry.m in Sources */,
 				D1BE637727F3E73D00BBB29D /* UIImage+BlurGlass.m in Sources */,
+				D14B787328DD85FC00B356F7 /* LoginTask.m in Sources */,
+				D14B788728DD9BE600B356F7 /* RegisterPresenter.m in Sources */,
 				D1DF210127D60BF600D2B3B6 /* SceneDelegate.m in Sources */,
 				D1996FA527DB501B00830D59 /* SecondViewController.m in Sources */,
 				D119175A27F7032800BAAF43 /* LFSLineChartVC.m in Sources */,
@@ -388,9 +490,13 @@
 				D1BE636D27F3E56F00BBB29D /* LFSPopTextView.m in Sources */,
 				D1CBCE2227D87A0600207E4D /* ZSPickView.m in Sources */,
 				D1E52D57280FB8FB00AAE966 /* LFSAppUserSetting.m in Sources */,
+				D14B787A28DD871300B356F7 /* ErrorMessage.m in Sources */,
 				D1996FAC27DB54D300830D59 /* CircleViewController.m in Sources */,
+				D1FC4A7828B7124200FFD3F4 /* LFSFitSmartPopView.m in Sources */,
+				D1C9579828C996F90006FA0F /* ThirdViewController.m in Sources */,
 				D1BF820227EDAB6800238869 /* KSBatteryView.m in Sources */,
 				D176A26B28096FB200A1D395 /* KSAlertTool.m in Sources */,
+				D14B787028DD857A00B356F7 /* Presenter.m in Sources */,
 				D1DF211727D60C0800D2B3B6 /* ZFProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

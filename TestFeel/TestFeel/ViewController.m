@@ -25,6 +25,9 @@
 #import "KSAlertTool.h"
 #import "UIView+Extension.h"
 #import "SecondViewController.h"
+#import "TopTipsView.h"
+#import "MBProgressHUD.h"
+#import "LFSFitSmartPopView.h"
 @interface ViewController ()<LFSBottomActionSheetDelegate>
 @property (nonatomic,strong) ZFProgressView *progress;
 @property NSUInteger count;
@@ -42,6 +45,8 @@
 @property(nonatomic,strong)KSConfigSliderView *slideBar;
 @property (nonatomic, assign) NSTimeInterval currentTime;
 @property(nonatomic,strong)KSBatteryView *batteryV;
+@property(nonatomic,strong)NSArray *infoArr;
+@property (weak, nonatomic) IBOutlet UIButton *lineBtn;
 @end
 
 @implementation ViewController
@@ -52,30 +57,60 @@
     NSLog(@"value==%.0f",value);
 }
 -(IBAction)click3:(UIButton*)sender{
+//    [TopTipsView showPromptWithMessage:@"测试一下"];
     
+    
+    NSArray *arr1 = @[NSLocalizedString(@"取消",nil),NSLocalizedString(@"确认",nil)];
+    LFSFitSmartPopView * pop = [[LFSFitSmartPopView alloc]initWithFrame:kKeyWindow.frame title:@"自定义训练次数" btnArray:arr1 num:10];
+    hq_weak(pop)
+    
+    pop.clickPopView = ^(LFSFitSmartPopView * _Nonnull alertView, NSInteger buttonIndex,int num) {
+        hq_strong(pop)
+        if (buttonIndex == 0) {
+            [pop close];
+        }else{
+            [pop close];
+        }
+    };
+
+    [kKeyWindow addSubview:pop];
+
+//    Byte byteArray[] = {0xE3, 0x28,0x03,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x02,0x00,0x00,0x66,0x00,0x00,0x00,0x00,0x4F};
+//    NSData *infoData = [NSData dataWithBytes:&byteArray length:sizeof(byteArray)];
+//    self.infoArr = [self convertDataToLongArrayWithData:infoData];
+//    NSLog(@"data1===%@ arr1=%p",self.infoArr[1],self.infoArr);
+//
+//    [MBProgressHUD showToast:@"连接异常" ToView:self.view];
+    
+
+//    data===18 arr=0x600002366550
+    // data1===28 arr1=0x600002340630
 }
 -(IBAction)click2:(UIButton*)sender{
-    LFSPopTextView *view = [[LFSPopTextView alloc]initWithTitle:@"修改名称" message:@""];
-    __weak typeof(LFSPopTextView) *weakPopUpView = view;
-    view.clickBackgroundHide = YES;
-    view.messageColor = [UIColor colorWithRed:92/255.0 green:92/255.0 blue:92/255.0 alpha:1];
-    view.titleSpace = 20.f;
-    view.messageSpace = 25.f;
-    view.titleFont = [UIFont systemFontOfSize:18];
-    view.titleColor = [UIColor blackColor];
-    [view addCustomTextFieldForPlaceholder:@"自定义输入框1" maxInputCharacter:30 text:@"" secureEntry:NO];
-    [view addCustomButton:@"取消" buttonTextColor:[UIColor purpleColor] clickBlock:^(UIButton * btn) {
-        NSLog(@"%ld",btn.tag);
-        
-    }];
-    [view addCustomButton:@"确定" buttonTextColor:[UIColor purpleColor] clickBlock:^(UIButton * btn) {
-        
-        UITextField *file = view.textFieldsArray.firstObject;
-        
-        NSLog(@"%@",file.text);
-        
-    }];
-    [view showPopView];
+    
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+//    LFSPopTextView *view = [[LFSPopTextView alloc]initWithTitle:@"修改名称" message:@""];
+//    __weak typeof(LFSPopTextView) *weakPopUpView = view;
+//    view.clickBackgroundHide = YES;
+//    view.messageColor = [UIColor colorWithRed:92/255.0 green:92/255.0 blue:92/255.0 alpha:1];
+//    view.titleSpace = 20.f;
+//    view.messageSpace = 25.f;
+//    view.titleFont = [UIFont systemFontOfSize:18];
+//    view.titleColor = [UIColor blackColor];
+//    [view addCustomTextFieldForPlaceholder:@"自定义输入框1" maxInputCharacter:30 text:@"" secureEntry:NO];
+//    [view addCustomButton:@"取消" buttonTextColor:[UIColor purpleColor] clickBlock:^(UIButton * btn) {
+//        NSLog(@"%ld",btn.tag);
+//
+//    }];
+//    [view addCustomButton:@"确定" buttonTextColor:[UIColor purpleColor] clickBlock:^(UIButton * btn) {
+//
+//        UITextField *file = view.textFieldsArray.firstObject;
+//
+//        NSLog(@"%@",file.text);
+//
+//    }];
+//    [view showPopView];
     
 }
 -(void)popText{
@@ -94,7 +129,7 @@
 }
 -(void)bottomSheet{
     UIButton *searchBtn = [[UIButton alloc]init];
-    [searchBtn setTitle:@"底部弹出" forState:(UIControlStateNormal)];
+    [searchBtn setTitle:@"顶部弹出" forState:(UIControlStateNormal)];
     searchBtn.backgroundColor = [UIColor whiteColor];
     [searchBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
     [searchBtn addTarget:self action:@selector(click3:) forControlEvents:(UIControlEventTouchUpInside)];
@@ -134,9 +169,78 @@
         return [tmpSupView currentViewController];
     }
 }
+//返回数组
+-(NSArray *)convertDataToLongArrayWithData:(NSData *)data{
+    
+    NSString *str = [self hexadecimalString:data];
+    int longnum = (int)[str length];
+    NSMutableArray *tempArray = [NSMutableArray array];
+    for(int i=0; i<longnum; i++) {
+        if (i%2 == 0) {
+            NSString *longStr = [str substringWithRange:NSMakeRange(i, 2)];
+            [tempArray addObject:longStr];
+        }
+    }
+    return tempArray;
+}
+//将Data类型转为String类型并返回
+-(NSString*)hexadecimalString:(NSData *)data{
+    NSString* result;
+    const unsigned char* dataBuffer = (const unsigned char*)[data bytes];
+    if(!dataBuffer){
+        return nil;
+    }
+    NSUInteger dataLength = [data length];
+    NSMutableString* hexString = [NSMutableString stringWithCapacity:(dataLength * 2)];
+    for(int i = 0; i < dataLength; i++){
+        [hexString appendString:[NSString stringWithFormat:@"%02lx", (unsigned long)dataBuffer[i]]];
+    }
+    result = [NSString stringWithString:hexString];
+    return result;
+}
+- (IBAction)clickAnimate:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.isSelected) {
+        NSLog(@"isSelected");
+        [UIView animateWithDuration:0.3 animations:^{
+//            sender.transform = CGAffineTransformMakeRotation(M_PI);
+            
+            [sender setImage:[UIImage imageNamed:@"向下12"] forState:(UIControlStateNormal)];
+        }];
+       
+    }else{
+        NSLog(@"isCancel");
+        [UIView animateWithDuration:0.3 animations:^{
+            [sender setImage:[UIImage imageNamed:@"向上"] forState:(UIControlStateNormal)];
+//            sender.transform = CGAffineTransformMakeRotation(0);
+        }];
+    }
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    NSString *str22 = @"01a42e5d";
+    NSLog(@"str22===%@",[str22 stringByReplacingCharactersInRange:NSMakeRange(2, 2) withString:@"12"]);
+    
+    [self.lineBtn setTitle:@"1212312\nqsdda" forState:(UIControlStateNormal)];
+    self.lineBtn.titleLabel.lineBreakMode = 0;
+    
+    NSString *straaa = [NSObject timestampToDate:[HYRadix hy_convertToDecimalFromHexadecimal:@"6310607f"]];
+    NSLog(@"%@",straaa);
+    
+    NSString *aaaa= @"01263e01124201a42e5d";
+    NSLog(@"====%d  %@",3/2,[aaaa substringWithRange:NSMakeRange(10, 4)]);
+    Byte byteArray[] = {0xE2, 0x18,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x02,0x00,0x00,0x66,0x00,0x00,0x00,0x00,0x4F};
+    NSData *infoData = [NSData dataWithBytes:&byteArray length:sizeof(byteArray)];
+    self.infoArr = [self convertDataToLongArrayWithData:infoData];
+    
+    NSLog(@"data===%@ arr=%p",self.infoArr[1],self.infoArr);
+    
+    
     
     NSString *aaatr = @"ab550172010002000000";
     NSString *bstr = [HYRadix hy_convertToDecimalFromHexadecimal:[aaatr substringWithRange:NSMakeRange(12,2)]];
@@ -188,11 +292,11 @@
 //    NSLog(@"%@%@%@%@",sex,age,height,weight);
     
     
-    NSString *message = [NSString stringWithFormat:@"%@ 30%@,%@",NSLocalizedString(@"Headset power below", nil), @"%",NSLocalizedString(@"Please charge.", nil)];
-    
-    [KSAlertTool alertOk:NSLocalizedString(@"Got it", nil)  mesasge:message confirmHandler:^(UIAlertAction * action) {
-        [self.navigationController popViewControllerAnimated:YES];
-    } viewController:self];
+//    NSString *message = [NSString stringWithFormat:@"%@ 30%@,%@",NSLocalizedString(@"Headset power below", nil), @"%",NSLocalizedString(@"Please charge.", nil)];
+//
+//    [KSAlertTool alertOk:NSLocalizedString(@"Got it", nil)  mesasge:message confirmHandler:^(UIAlertAction * action) {
+//        [self.navigationController popViewControllerAnimated:YES];
+//    } viewController:self];
     
     NSLog(@"%@",[LFSDeviceInfo getDeviceDesignation:@"AirRigh01"]);
     
@@ -307,7 +411,7 @@
     [searchBtn setTitle:@"点击1" forState:(UIControlStateNormal)];
     searchBtn.backgroundColor = [UIColor whiteColor];
     [searchBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
-    [searchBtn addTarget:self action:@selector(click1:) forControlEvents:(UIControlEventTouchUpInside)];
+    [searchBtn addTarget:self action:@selector(click:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:searchBtn];
     [searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left).offset(124);
