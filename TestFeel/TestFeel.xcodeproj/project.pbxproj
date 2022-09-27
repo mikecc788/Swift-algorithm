@@ -42,6 +42,7 @@
 		D1C9579828C996F90006FA0F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C9579728C996F90006FA0F /* ThirdViewController.m */; };
 		D1CBCE2227D87A0600207E4D /* ZSPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBCE2127D87A0600207E4D /* ZSPickView.m */; };
 		D1CBCE2527D87A7C00207E4D /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CBCE2427D87A7C00207E4D /* UIColor+Extension.m */; };
+		D1D45C7628E2A2F300DDD486 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D45C7528E2A2F300DDD486 /* NetworkManager.m */; };
 		D1DF20FE27D60BF600D2B3B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF20FD27D60BF600D2B3B6 /* AppDelegate.m */; };
 		D1DF210127D60BF600D2B3B6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF210027D60BF600D2B3B6 /* SceneDelegate.m */; };
 		D1DF210427D60BF600D2B3B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF210327D60BF600D2B3B6 /* ViewController.m */; };
@@ -127,6 +128,8 @@
 		D1CBCE2127D87A0600207E4D /* ZSPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPickView.m; sourceTree = "<group>"; };
 		D1CBCE2327D87A7C00207E4D /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		D1CBCE2427D87A7C00207E4D /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		D1D45C7428E2A2F300DDD486 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		D1D45C7528E2A2F300DDD486 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		D1DF20F927D60BF600D2B3B6 /* TestFeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DF20FC27D60BF600D2B3B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1DF20FD27D60BF600D2B3B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -300,6 +303,15 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		D1D45C7328E2A2E100DDD486 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				D1D45C7428E2A2F300DDD486 /* NetworkManager.h */,
+				D1D45C7528E2A2F300DDD486 /* NetworkManager.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
 		D1DF20F027D60BF600D2B3B6 = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +333,7 @@
 		D1DF20FB27D60BF600D2B3B6 /* TestFeel */ = {
 			isa = PBXGroup;
 			children = (
+				D1D45C7328E2A2E100DDD486 /* http */,
 				D14C244A280D325D003B01DB /* resource */,
 				D1ACAE5927D998A200572D08 /* views */,
 				D1ACAE5827D9989500572D08 /* class */,
@@ -488,6 +501,7 @@
 				D176A26828096DC700A1D395 /* MBProgressHUD+Extension.m in Sources */,
 				D1B0ACA127E9710400768ABB /* HYRadix.m in Sources */,
 				D1BE636D27F3E56F00BBB29D /* LFSPopTextView.m in Sources */,
+				D1D45C7628E2A2F300DDD486 /* NetworkManager.m in Sources */,
 				D1CBCE2227D87A0600207E4D /* ZSPickView.m in Sources */,
 				D1E52D57280FB8FB00AAE966 /* LFSAppUserSetting.m in Sources */,
 				D14B787A28DD871300B356F7 /* ErrorMessage.m in Sources */,

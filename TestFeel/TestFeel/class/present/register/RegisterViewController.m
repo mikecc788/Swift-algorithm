@@ -8,6 +8,7 @@
 #import "RegisterViewController.h"
 #import "RegisterProtocol.h"
 #import "RegisterPresenter.h"
+#import "NetworkManager.h"
 @interface RegisterViewController ()<RegisterProtocol>
 @property (strong, nonatomic) RegisterPresenter *presenter;
 @end
@@ -19,6 +20,9 @@
     self.presenter = [[RegisterPresenter alloc]initWithView:self];
     
     [self.presenter test1];
+    
+    [[NetworkManager sharedManager] test];
+
 }
 
 -(void)registerSuccess{
