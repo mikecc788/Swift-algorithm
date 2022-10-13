@@ -6,10 +6,21 @@
 //
 
 #import "LoginDisk.h"
-
+#import "NetworkManager.h"
 @implementation LoginDisk
 +(void)getLoginDataWithParams:(id)params success:(void (^)(UserInfoModel * _Nonnull))success fail:(void (^)(ErrorMessage * _Nonnull))fail{
     //在此，登录验证，登录成功后,解析数据，本地存储登录信息
+    
+    [[NetworkManager sharedManager] tokenCheckWithSuccess:^(id responseObject){
+        
+            // Allow User Access and load content
+            //[self loadContent];
+        } failure:^(NSString *failureReason, NSInteger statusCode) {
+            // Logout user if logged in and deny access and show login view
+            //[self showLoginView];
+    }];
+    
+    
     //测试数据，
     int arcCode = 1 ; //arc4random()%10;
     NSDictionary * dicParams = (NSDictionary*)params;

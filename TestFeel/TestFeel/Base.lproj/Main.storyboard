@@ -146,6 +146,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dH6-rh-uXW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.87843137250000003" green="0.76470588240000004" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="IO6-kv-a0P" kind="relationship" relationship="rootViewController" id="m1A-Hr-hZI"/>

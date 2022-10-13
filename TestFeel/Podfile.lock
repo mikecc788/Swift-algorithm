@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - BRPickerView (2.7.6):
     - BRPickerView/AddressPickerView (= 2.7.6)
     - BRPickerView/Base (= 2.7.6)
@@ -11,41 +26,58 @@ PODS:
     - BRPickerView/Base
   - BRPickerView/StringPickerView (2.7.6):
     - BRPickerView/Base
+  - IQKeyboardManager (6.5.10)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
   - SGPagingView (1.7.2)
+  - TZImagePickerController/Basic (3.8.3)
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 4.0)
   - BRPickerView
+  - IQKeyboardManager
   - Masonry
   - MBProgressHUD
   - MJRefresh
   - PNChart
+  - SDWebImage
   - SGPagingView (~> 1.7.2)
+  - TZImagePickerController/Basic
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - BRPickerView
+    - IQKeyboardManager
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - PNChart
+    - SDWebImage
     - SGPagingView
+    - TZImagePickerController
     - UICountingLabel
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BRPickerView: 2a1620caf218e37a3aca9626732719a419928b15
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SGPagingView: 0b91bd360370e56a6496b06df9b3e28bc3f075cc
+  TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 7d8d3fc03d71ff5faf850b920c369ce1a8c576bf
+PODFILE CHECKSUM: 576e0338a45c83e1fcbe29fe0a86ddebeb079386
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

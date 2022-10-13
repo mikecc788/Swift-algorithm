@@ -12,15 +12,38 @@
 #import <Masonry.h>
 #import "UIView+Extension.h"
 
+/// 设置字体大小
+#define XTAY_FONT_WEIGHT(a, b)       [UIFont systemFontOfSize:a weight:b]
+#define XTAY_WEAK_SELF               typeof(self) weakSelf = self;
+#define AVATAR_W_H            50
+#define CONTENT_SHOW_MAXH     150
+/// 设置颜色
+#define XTAY_RGB(r, g, b)            [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1]
+/// 主色
+#define XTAY_MAIN_COLOR              XTAY_RGB(239, 169, 57)
+/// 状态栏高度
+#define XTAY_STATUS_BAR_H            [[UIApplication sharedApplication] statusBarFrame].size.height
+/// 获取当前导航栏高度
+#define XTAY_NAV_BAR_H               self.navigationController.navigationBar.frame.size.height
+
+#define LogMethod() NSLog(@"%s", __func__)
 #define kKeyWindow [[[UIApplication sharedApplication] windows] objectAtIndex:0]
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define statusBar [[UIApplication sharedApplication] statusBarFrame].size.height
+
+#define StatusBar [[UIApplication sharedApplication] statusBarFrame].size.height
+
 #define SafeAreaTopHeight ((SCREEN_HEIGHT >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"] ? 88 : 64)
 #define SafeAreaBottomHeight ((SCREEN_HEIGHT >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"]  ? 30 : 0)
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define kMaxX(X) CGRectGetMaxX(X)
 #define kMaxY(Y) CGRectGetMaxY(Y)
 #define Gloabal_bg [UIColor colorFromHexStr:@"#854794"]
+
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"[%s:%d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+
 
 #ifndef hq_weak
 #if DEBUG
